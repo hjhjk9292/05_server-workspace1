@@ -84,7 +84,7 @@ public class RequestPostServlet extends HttpServlet {
 		// 응답하고자 하는 뷰(jsp) 선택하면서 RequestDispatcher 객체 생성
 		// == jsp 띄워라 ㅡ jsp를 띄우기 위해서는 이런 코드를 써야한다~~
 		RequestDispatcher view = request.getRequestDispatcher("views/responsePage.jsp"); // RequestDispatcher 자료형의 view 변수의 request.getRequestDispatcher("jsp경로!!");
-		view.forward(request, response); // request라는 객체에 셋팅해뒀기 때문에 request도 같이 가져감
+		view.forward(request, response); // request라는 객체에 셋팅해뒀기 때문에 request도 같이 가져감 // forward 작업을 해줘야지 위의 jsp로 날아감!!! ★★
 		
 	}
 
